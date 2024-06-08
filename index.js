@@ -15,3 +15,12 @@ function clickLike2(){
 
 btnLike1.addEventListener("click",clickLike1)
 btnLike2.addEventListener("click",clickLike2)
+
+const comment= document.getElementById("comment")
+const submit = document.getElementById("submit")
+const commentbox = document.getElementById("commentbox")
+function submitcomment(){
+  commentbox.textContent+=comment.value.toString() +"
+comment.value=""
+}
+submit.addEventListener("click", submitComent)
