@@ -12,17 +12,19 @@
                <button class="btn btn-primary" type="button" id="btnLike1"> Like </button>
                 <output id="countLikes1">0</output>
              </div>
-             <div class="col-4">
-               <img src="1713495966466.jpg" class="img-thumbnail" style="width:400px;height:500px;"/> <br>
-               <button class="btn btn-primary" type="button" id="btnLike2"> Like </button>
-                <output id="countLikes2">0</output>
-             </div> 
-              const submit = document.getElementById("submit")
+             const submit = document.getElementById("submit")
               const comment = document.getElementById("comment")
               const commentbox = document.getElementById("commentbox")
             function submitComment(){
   commentbox.textContent += comment.value.toString() + "\n"
 }
+             submit.addEventListener("click", submitComment)
+             <div class="col-4">
+               <img src="1713495966466.jpg" class="img-thumbnail" style="width:400px;height:500px;"/> <br>
+               <button class="btn btn-primary" type="button" id="btnLike2"> Like </button>
+                <output id="countLikes2">0</output>
+             </div> 
+              
 submit.addEventListener("click", submitComment)
             </div>
           </div>
